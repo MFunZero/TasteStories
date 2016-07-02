@@ -22,7 +22,6 @@ class CTView: UIView {
     
     private var font = UIFont(name: "Arial", size: 40)
 
-    private var duration:NSTimeInterval = 10.0
     
     func setIsVertical(flag:Bool){
         self.isVertical = flag
@@ -33,9 +32,7 @@ class CTView: UIView {
     func setFont(flag:UIFont){
         self.font = flag
     }
-    func setDuration(flag:NSTimeInterval){
-        self.duration = flag
-    }
+    
     
     func insertEnterToString(text:String,index:Int)
     {
@@ -141,4 +138,7 @@ class CTView: UIView {
         
     }
 
+
 }
+
+
