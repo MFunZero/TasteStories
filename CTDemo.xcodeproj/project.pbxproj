@@ -12,6 +12,7 @@
 		2C8585BF1D268AC5004020F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8585BD1D268AC5004020F9 /* Main.storyboard */; };
 		2C8585C11D268AC5004020F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8585C01D268AC5004020F9 /* Assets.xcassets */; };
 		2C8585C41D268AC5004020F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8585C21D268AC5004020F9 /* LaunchScreen.storyboard */; };
+		2C8585CC1D268AD3004020F9 /* CTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8585CB1D268AD3004020F9 /* CTView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2C8585C01D268AC5004020F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C8585C31D268AC5004020F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8585C51D268AC5004020F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C8585CB1D268AD3004020F9 /* CTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTView.swift; sourceTree = "<group>"; };
+		2C8585CD1D268B69004020F9 /* xingshu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = xingshu.ttf; sourceTree = "<group>"; };
+		2C8585CE1D268CD7004020F9 /* lishu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lishu.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,25 @@
 		2C8585B81D268AC5004020F9 /* CTDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2C8585CF1D268EDF004020F9 /* Resource */,
 				2C8585B91D268AC5004020F9 /* AppDelegate.swift */,
 				2C8585BB1D268AC5004020F9 /* ViewController.swift */,
 				2C8585BD1D268AC5004020F9 /* Main.storyboard */,
+				2C8585CB1D268AD3004020F9 /* CTView.swift */,
 				2C8585C01D268AC5004020F9 /* Assets.xcassets */,
 				2C8585C21D268AC5004020F9 /* LaunchScreen.storyboard */,
 				2C8585C51D268AC5004020F9 /* Info.plist */,
 			);
 			path = CTDemo;
+			sourceTree = "<group>";
+		};
+		2C8585CF1D268EDF004020F9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2C8585CE1D268CD7004020F9 /* lishu.ttf */,
+				2C8585CD1D268B69004020F9 /* xingshu.ttf */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8585BC1D268AC5004020F9 /* ViewController.swift in Sources */,
+				2C8585CC1D268AD3004020F9 /* CTView.swift in Sources */,
 				2C8585BA1D268AC5004020F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,10 +266,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CTDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cocoa.CTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -261,10 +280,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CTDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cocoa.CTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
